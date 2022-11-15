@@ -1,0 +1,441 @@
+body {
+    /*Body padrão e alterar imagem do background*/
+    margin: 0;
+    padding: 0;
+    background: url("../imagens/background.jpg");
+    background-image: no-repeat;
+    background-attachment: fixed;
+}
+
+a {
+    /*Alterar contorno dos <a>*/
+    outline: 0;
+}
+
+img {
+    /*Remover borda das imagens*/
+    border: 0;
+}
+
+@font-face {
+    /*Fonte LimelightRegular "Avá, é mesmo"*/
+    font-family: 'CaviarDreams_Italic';
+    src: url('../fonts/CaviarDreams_Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    /*Fonte LimelightRegular "Avá, é mesmo"*/
+    font-family: 'CODE Bold';
+    src: url('../fonts/CODE Bold.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    /*Fonte Lobster1.4Regular "Avá, é mesmo"*/
+    font-family: 'Sitka Text Bold';
+    src: url('../fonts/nunito-regular-webfont.eot');
+    src: url('../fonts/nunito-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/nunito-regular-webfont.woff') format('woff'), url('../fonts/nunito-regular-webfont.ttf') format('truetype'), url('../fonts/nunito-regular-webfont.svg#NunitoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    /*Fonte Lobster1.4Regular "Avá, é mesmo"*/
+    font-family: 'Lobster1.4Regular';
+    src: url('../fonts/lobster-webfont.eot');
+    src: url('../fonts/lobster-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lobster-webfont.woff') format('woff'), url('../fonts/lobster-webfont.ttf') format('truetype'), url('../fonts/lobster-webfont.svg#Lobster1.4Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    /*Fonte LimelightRegular "Avá, é mesmo"*/
+    font-family: 'LimelightRegular';
+    src: url('../fonts/limelight-webfont.eot');
+    src: url('../fonts/limelight-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/limelight-webfont.woff') format('woff'), url('../fonts/limelight-webfont.ttf') format('truetype'), url('../fonts/limelight-webfont.svg#LimelightRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#header {
+    /*Estilo da header*/
+    height: 205px;
+    width: 100%;
+    background: transparent url("../imagens/navigation.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+#header div {
+    /*Estilo da div header*/
+    width: 960px;
+    margin: 0 auto;
+    height: 203px;
+    position: relative;
+}
+
+#header div a img {
+    /*Estilo da imagem dentro da div <a>*/
+    border: 0;
+    float: right;
+    overflow: hidden;
+}
+
+#header div img.logo {
+    /*Estilo da logo*/
+    border: 0;
+    float: left;
+    overflow: hidden;
+    margin-top: 1px;
+}
+
+#header div ul.navigation {
+    /*Navigation Div Ul*/
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+    left: 0px;
+    top: 160px;
+    overflow: hidden;
+    width: 620px;
+}
+
+#header div ul.navigation li {
+    /*Alinhar flutuação a esquerda*/
+    float: left;
+}
+
+#header div ul.navigation li:first-child a {
+    /*Preenchimento a esquerda da navigation*/
+    padding-left: 0;
+}
+
+#header div ul.navigation li a {
+    /*Estilo da navigation*/
+    text-decoration: none;
+    padding: 0 30px;
+    font-family: 'Lobster1.4Regular';
+    color: #FFFFFF;
+    font-size: 21px;
+}
+
+#header div ul.navigation li a:hover {
+    /*Alterar cor quando passar o mouse*/
+    color: #372F16;
+}
+
+#header div ul.navigation li a.active {
+    /*Selecção ativa do navigation*/
+    color: #372F16;
+}
+
+#body {
+    /*Estilo do corpo */
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#body .content {
+    /* Estilo do top */
+    width: 620px;
+    margin: 30px 40px 30px 0;
+    height: auto;
+    padding-top: 18px;
+    background: transparent url("../imagens/top2.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+#body .content div {
+    /* Estilo do bottom */
+    width: 620px;
+    background: transparent url("../imagens/bottom2.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 12px;
+}
+
+#body .content div div {
+    /* Estilo das laterais */
+    width: 540px;
+    padding: 10px 40px 20px 40px;
+    background: transparent url("../imagens/content2.png");
+    background-position: center center;
+    background-repeat: repeat-y;
+}
+
+#body .content div div h1 {
+    /*Estilo do Titulo*/
+    font-family: 'Lobster1.4Regular';
+    font-size: 36px;
+    color: #1b6568;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#body .content div div h2 {
+    /*Estilo do texto de ingredientes */
+    font-family: 'Lobster1.4Regular';
+    font-size: 30px;
+    color: #54127D;
+    text-align: center;
+}
+
+#body .content div div h3 {
+    /*Estilo do texto de ingredientes */
+    font-family: 'Lobster1.4Regular';
+    font-size: 24px;
+    color: #822619;
+    font-weight: normal;
+    text-align: center;
+    margin: 2px;
+    margin-top: 10px;
+}
+
+#body .content div div h4 {
+    /*Estilo do Titulo*/
+    font-family: 'Lobster1.4Regular';
+    font-size: 36px;
+    color: #1b6568;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#body .content div div h5 {
+    /*Estilo do Titulo*/
+    font-family: 'Lobster1.4Regular';
+    font-size: 36px;
+    color: #1b6568;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 0px;
+}
+
+#body .sidebar {
+    /* Estilo da Sidebar e alinhamento */
+    width: 300px;
+    float: left;
+    margin: 30px 0;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#body .sidebar h1 {
+    /* Texto em <h1> na sidebar */
+    color: #1b6568;
+    font-family: 'Lobster1.4Regular';
+    font-size: 36px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+#body .sidebar ul.navigation {
+    /*Estilo da <ul> na sidebar */
+    list-style-type: none;
+    margin: 50px 0 0 0;
+    padding: 0;
+}
+
+#body .sidebar ul.navigation li {
+    /* Estilo da separação da sidebar */
+    border-style: solid;
+    border-color: #822619;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    height: 50px;
+    line-height: 50px;
+}
+
+#body .sidebar ul.navigation li.first {
+    /* Estilo do <li> first */
+    border-style: solid;
+    border-color: #822619;
+    border-left: none;
+    border-right: none;
+}
+
+#body .sidebar ul.navigation li a {
+    /*Estilo Sidebar*/
+    text-decoration: none;
+    font-family: 'LimelightRegular';
+    font-size: 32px;
+    color: #B70E0E;
+    text-align: center;
+    font-weight: normal;
+}
+
+#body .sidebar ul.navigation li a:hover {
+    /*Estilo do hover sidebar */
+    color: #062521;
+    font-size: 32px;
+    font-family: 'LimelightRegular';
+}
+
+#body .sidebar ul.navigation li a.active {
+    /*Estilo do Active Sidebar*/
+    color: #062521;
+    font-size: 32px;
+    font-family: 'LimelightRegular';
+}
+
+#body .sidebar ul li {
+    /* Espaçamento da sidebar */
+    border-style: dotted;
+    border-color: #822619;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    line-height: 18px;
+    padding: 10px 10px;
+    font-family: 'NunitoRegular';
+}
+
+#body .sidebar ul li a:hover {
+    /* Estio do hover da sidebar */
+    font-family: 'NunitoRegular';
+    text-decoration: none;
+    color: #1B6568;
+    font-size: 16px;
+}
+
+#body .sidebar ul {
+    /* Margem do topo da sidebar */
+    margin-top: 30px;
+}
+
+
+/*###RODAPÉ###*/
+
+#footer {
+    /* Rodapé */
+    height: 30px;
+    width: 100%;
+    padding: 5px 0;
+    margin-top: auto;
+    background: transparent url("../imagens/bg-footer.jpg");
+    background-repeat: repeat-x;
+    background-position: top;
+    background-color: #1B6720;
+    position: relative;
+    bottom: 0px;
+}
+
+#footer div span {
+    /*Span do rodapé "Todos os direitos..." */
+    display: block;
+    color: #ebe9d7;
+    font-family: 'CODE Bold';
+    font-size: 16px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+
+/*REDES SOCIAIS*/
+
+.facebook {
+    position: absolute;
+    left: 875px;
+    top: 95px;
+    height: 40px;
+    width: 40px;
+}
+
+.facebook:hover {
+    position: absolute;
+    left: 875px;
+    top: 95px;
+    height: 42px;
+    width: 41px;
+    color: white;
+}
+
+.youtube {
+    position: absolute;
+    left: 920px;
+    top: 95px;
+    height: 40px;
+    width: 40px;
+}
+
+.youtube:hover {
+    position: absolute;
+    left: 920px;
+    top: 95px;
+    height: 42px;
+    width: 41px;
+}
+
+.twitter {
+    position: absolute;
+    left: 965px;
+    top: 95px;
+    height: 40px;
+    width: 40px;
+}
+
+.twitter:hover {
+    position: absolute;
+    left: 965px;
+    top: 95px;
+    height: 42px;
+    width: 41px;
+}
+
+.instagram {
+    position: absolute;
+    left: 1010px;
+    top: 95px;
+    height: 40px;
+    width: 40px;
+}
+
+.instagram:hover {
+    position: absolute;
+    left: 1010px;
+    top: 95px;
+    height: 42px;
+    width: 41px;
+}
+
+.linkedin {
+    position: absolute;
+    left: 1055px;
+    top: 95px;
+    height: 40px;
+    width: 40px;
+}
+
+.linkedin:hover {
+    position: absolute;
+    left: 1055px;
+    top: 95px;
+    height: 42px;
+    width: 41px;
+}
+
+.googleplus {
+    position: absolute;
+    left: 1100px;
+    top: 95px;
+    height: 40px;
+    width: 40px;
+}
+
+.googleplus:hover {
+    position: absolute;
+    left: 1100px;
+    top: 95px;
+    height: 42px;
+    width: 41px;
+}

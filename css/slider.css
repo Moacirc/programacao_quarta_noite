@@ -1,0 +1,74 @@
+.slideshow{ 
+	position:absolute;
+    margin: 10px auto;
+    border: 2px solid #822619;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    -webkit-box-shadow: 0 0 2px #999;
+       -moz-box-shadow: 0 0 2px #999;
+            box-shadow: 0 0 2px #999;
+		width:1100px;
+		height:500px;
+		left:50%;
+		margin-left: -550px;
+		top:50%;
+		margin-top: -165px;
+		float: center;
+}
+.slide-item{
+	width:1100px; height:500px; position:relative;
+}
+.slide-item p {width:300px;
+			   padding:10px;
+			   color:#CCC;
+			   background:rgba(0,0,0,0.6);
+			   position:absolute; 
+			   bottom:0px;
+			   left:20px;
+}
+.pager{ position:absolute;
+		width:100px;
+		height:170px;
+		left:50%;
+		margin-left:500px;
+		top:50%;
+		margin-top:-120px;
+		z-index:999;
+}			   
+.pager a{
+	display:block;
+	width:30px;
+	height:30px;
+	line-height:30px;
+	color:#FFF;
+	text-align:center;
+	border-radius:100%;
+	-moz-border-radius:100%;
+	-webkit-border-radius:100%;
+	background-color:#333;
+	margin:10px;
+	cursor:pointer;
+}
+.pager a:hover{
+	background-color:#666;	
+}	
+.pager a.activeSlide{
+	background-color:#666;
+}
+h2 { /*Estilo do texto de ingredientes */
+	font-family :'CaviarDreams_Italic';
+	font-size :30px;
+	color :#2B1A16;
+	text-align: center;
+	text-decoration: none;
+	margin-top: 1px;
+}
+body { /*Body padrão e alterar imagem do background*/
+	margin :0;
+	padding :0;
+	background :url("../imagens/background.jpg");
+	background-image: no-repeat;
+	line-height :25px;
+	background-attachment: fixed;
+}

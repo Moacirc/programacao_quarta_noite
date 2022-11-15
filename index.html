@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pizza | Home</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="imagens/icones/favicon.png" type="image/png">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link href="css/slider.css" rel="stylesheet" type="text/css">
+</head>
+<div id="header">
+    <div>
+        <a href="index.html"><img class="logo" src="imagens/logoNew1.png" width="500" height="100" alt=""></a>
+
+        <ul class="navigation">
+            <li>
+                <a class="active" href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="adm/salgadas.html">Cardápio</a>
+            </li>
+            <li>
+                <a href="adm/promocoes.html">Promoções</a>
+            </li>
+            <li>
+                <a href="adm/contatoForm.html">Contato</a>
+            </li>
+            <li>
+                <a href="adm/sobre.html">Sobre</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<body>
+    <script language="javascript" src="js/jquery.js"></script>
+    <script language="javascript" src="js/jquery.cycle.all.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#resumeButton').hide();
+            $('.slideshow').cycle({
+                fx: 'fade',
+                speed: 3000,
+                timeout: 5000,
+                pause: false,
+                pager: $('.pager'),
+                pagerAnchorBuilder: function(index, DOMelement) {
+                    return '<a>' + (index + 1) + '</a>';
+                }
+            });
+            $('#pauseButton').click(function() {
+                $('.slideshow').cycle('pause');
+                $('#pauseButton').hide();
+                $('#resumeButton').show();
+            });
+            $('#resumeButton').click(function() {
+                $('.slideshow').cycle('resume');
+                $('#pauseButton').show();
+                $('#resumeButton').hide();
+            });
+        });
+    </script>
+
+    <body>
+        <span class="pager"></span>
+        <div class="slideshow">
+            <div class="slide-item">
+                <img src="imagens/slides/slide1.jpg" width="1100" height="500" />
+                <h2>Pizza Premiada</h2>
+                <p>No Natal, colocamos cupons em cada uma das pizzas pedidas. Achou, ganhou um cupom de desconto de até 50% nos próximos 10 pedidos.</p>
+            </div>
+            <div class="slide-item">
+                <img src="imagens/slides/slide2.jpg" width="1100" height="500" />
+                <h2>Entre Céu e Inferno</h2>
+                <p>Metade do preço para um pedido de pizza meio doce e meio apimentada. E aí? Topa?</p>
+            </div>
+            <div class="slide-item">
+                <img src="imagens/slides/slide3.jpg" width="1100" height="500" />
+                <h2>Happyzza To You</h2>
+                <p>Aniversariante ganha um presente junto da pizza pediada com 40% de desconto.</p>
+            </div>
+            <div class="slide-item">
+                <img src="imagens/slides/slide4.jpg" width="1100" height="500" />
+                <h2>Ovo Adoidado</h2>
+                <p>Nessa promoção de Páscoa, as crianças participam de uma competição de encontrar ovinhos coloridos dentro da pizza pedida. A família do filho vencedor ganha uma cesta de Páscoa.</p>
+            </div>
+            <div class="slide-item">
+                <img src="imagens/slides/slide5.jpg" width="1100" height="500" />
+                <h2>Kids Day</h2>
+                <p>No Dia das Crianças, as famílias que tem filho(s) abaixo de 12 anos ganham um brinde ao pedir um combo de duas pizzas grandes mais um refrigerante.</p>
+            </div>
+            <div class="slide-item">
+                <img src="imagens/slides/slide6.jpg" width="1100" height="500" />
+                <h2>Sonho De Fã De Pizza</h2>
+                <p>A cada 50 pedidos do cliente, a pizza sai pela metade do preço.</p>
+            </div>
+            <div class="slide-item">
+                <img src="imagens/slides/slide7.jpg" width="1100" height="500" />
+                <h2>Japão Entra Em Cena</h2>
+                <p>Colocamos alguns sushis na pizza com uma pitada da pimenta Wasabi; se você pedir uma pizza dessa mais um refrigerante, você paga com 20% de desconto.</p>
+            </div>
+            <div class="slide-item">
+                <img src="imagens/slides/slide8.jpg" width="1100" height="500" />
+                <h2>Os Nerds Tem Vez</h2>
+                <p>A cada final de mês, preparamos pizzas no estilo bem nerd. Peça uma dessa e com mais R$10,00 você ganha um refrigerante editado a mão, com desenhos dos personagens dos quadrinhos.</p>
+            </div>
+            <div class="slide-item">
+                <img src="imagens/slides/slide9.jpg" width="1100" height="500" />
+                <h2>Primeira Vez Na TecPizza</h2>
+                <p>Cliente de primeira viagem ganha 60% de desconto, ao pedir uma pizza de dois sabores e um refrigerante.</p>
+            </div>
+        </div>
+        <div id="footer">
+            <div>
+                <span>&copy;2022 Todos os direitos reservados - WebDesign •
+							</span>
+                <a href=". $linha['facebookUrl']."><img src='imagens/icones/facebook.png' class='facebook' /></a>";
+                <a href=". $linha['youtubeUrl']."><img src='imagens/icones/youtube.png' class='youtube' /></a>";
+                <a href=". $linha['twitterUrl']."><img src='imagens/icones/twitter.png' class='twitter' /></a>";
+                <a href=". $linha['instagramUrl']."><img src='imagens/icones/instagram.png' class='instagram' /></a>";
+                <a href=". $linha['linkedinUrl']."><img src='imagens/icones/linkedin.png' class='linkedin' /></a>";
+                <a href=". $linha['googleUrl']."><img src='imagens/icones/google.png' class='googleplus' /></a>"; }
+            </div>
+        </div>
+    </body>
+
+</html>
